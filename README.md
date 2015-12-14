@@ -1,4 +1,4 @@
 Search palindromes
 ==========
 
-This class is used for searching of palindromes inside the string.
+This class is used for searchingg of palindromes inside the string.
