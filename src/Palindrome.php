@@ -83,7 +83,9 @@ class Palindrome
      */
     protected function isPalindrome(array $chunk)
     {
-        $chunk = array_map('mb_strtolower', $chunk);
+        $chunk = array_map(function($val){
+            return mb_strtolower($val, 'UTF-8');
+        }, $chunk);
 
         // Removes unnecessary characters from diff calculation
         $chunk = array_values(array_filter($chunk, function($val){
